@@ -1,28 +1,17 @@
-## O que mudou?
+## O que muda?
 
-<!-- Descreva as mudanças de forma clara e concisa -->
+<!-- Descreva o que este PR faz em 1-3 frases -->
 
-## Por quê?
+## Checklist de Qualidade
 
-<!-- Qual problema resolve ou qual feature adiciona -->
-
-## Como testar?
-
-- [ ] Passo 1
-- [ ] Passo 2
-- [ ] Passo 3
-
-## Checklist
-
-- [ ] Código segue o [Engineering Handbook](https://code.lzrtechnologies.com)
-- [ ] Testes adicionados/atualizados
-- [ ] TypeScript sem erros (`npm run typecheck`)
-- [ ] Lint passando (`npm run lint`)
-- [ ] Sem `console.log` ou `debugger`
-- [ ] Sem `any` no TypeScript
-- [ ] Variáveis sensíveis via env vars (não hardcoded)
-- [ ] Documentação atualizada (se aplicável)
-
-## Screenshots (se aplicável)
-
-<!-- Cole prints se for mudança visual -->
+- [ ] JSDoc em todos os metodos publicos novos/modificados
+- [ ] Toasts via `messages.ts` (nenhum hardcoded)
+- [ ] `tryCatch()` + `toast.error()` nos hooks (sem `console.error`)
+- [ ] aria-labels em componentes interativos novos
+- [ ] Paginacao em queries de listagem (`.range()` ou `.limit()`)
+- [ ] Testes para logica nova (services, hooks, libs)
+- [ ] `events.emit()` em operacoes de escrita (create/update/delete)
+- [ ] Endpoints backend com `require_scope()`
+- [ ] `npm run build` passa (0 erros)
+- [ ] `npm run test` passa (48+ testes)
+- [ ] `npm run lint` sem erros novos
