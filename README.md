@@ -2,7 +2,7 @@
 
 Workflows reutilizáveis do GitHub Actions e templates de governança da **LZR Technologies**.
 
-Baseado no [Engineering Handbook](https://code.lzrtechnologies.com).
+Baseado no [Engineering Handbook v2.3](https://code.lzrtechnologies.com).
 
 ## Workflows Reutilizáveis
 
@@ -24,9 +24,11 @@ jobs:
     uses: LZR-Tech/lzr-github-ops/.github/workflows/ci.yml@main
     with:
       node-version: '20'
-      package-manager: 'npm'
+      package-manager: 'pnpm'  # padrão LZR v2.3 — também aceita 'npm' e 'yarn' (compatibilidade)
       run-e2e: false
 ```
+
+> **Nota (v2.3)**: O default do input `package-manager` permanece `'npm'` para não quebrar repos legados que ainda dependem dele. **Projetos novos devem passar `'pnpm'` explicitamente** — os templates `lzr-template-web-next` e `lzr-template-api-node` já vêm assim.
 
 ### Security Scan (`security.yml`)
 
