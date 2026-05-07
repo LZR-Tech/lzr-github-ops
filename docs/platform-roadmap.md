@@ -28,32 +28,30 @@ Cada melhoria entra numa de 3 camadas:
 
 ### 🔴 Crítico
 
-- **#TBD** Dependabot + CodeQL + npm audit nos templates *(security baseline)*
-- **#TBD** Coverage threshold no `ci.yml` reutilizável (mínimo 80%, falha PR abaixo)
-- **#TBD** Setup de observabilidade padronizado — Sentry + structured logs (helper `@lzr/observability`)
+- **#7** Dependabot + CodeQL + npm audit nos templates *(security baseline)*
+- **#8** Coverage threshold no `ci.yml` reutilizável (mínimo 80%, falha PR abaixo)
+- **#9** Setup de observabilidade padronizado — Sentry + structured logs (helper `@lzr/observability`)
 
 ### 🟡 Importante
 
-- **#TBD** Bundle size tracking + Lighthouse CI — performance budget enforced
-- **#TBD** Axe-core no CI dos templates web — accessibility automatizada
-- **#TBD** Setup de feature flags — recomendação + helper (GrowthBook ou Unleash)
-- **#TBD** Preview deployments por PR — Vercel preview env documentado nos templates
-- **#TBD** Generate OpenAPI spec inicial em projetos API — passo extra na skill
-- **#TBD** Storybook setup no `lzr-template-web-next` — UI components com docs vivas
+- **#10** Bundle size tracking + Lighthouse CI — performance budget enforced
+- **#11** Axe-core no CI dos templates web — accessibility automatizada
+- **#12** Setup de feature flags — recomendação + helper (GrowthBook ou Unleash)
+- **#13** Preview deployments por PR — Vercel preview env documentado nos templates
+- **#14** Generate OpenAPI spec inicial em projetos API — passo extra na skill
+- **#15** Storybook setup no `lzr-template-web-next` — UI components com docs vivas
 
 ### 🟢 Refinos
 
-- **#TBD** Mutation testing opcional via Stryker — workflow reutilizável
-- **#TBD** Dev container (`.devcontainer.json`) nos templates — onboarding <10min
-- **#TBD** Secrets em vault (Doppler ou Infisical) — alternativa a `.env.local`
+- **#16** Mutation testing opcional via Stryker — workflow reutilizável
+- **#17** Dev container (`.devcontainer.json`) nos templates — onboarding <10min
+- **#18** Secrets em vault (Doppler ou Infisical) — alternativa a `.env.local`
 
 ## Bugs descobertos (não-roadmap, mas vivem aqui pra rastrear)
 
-- **#TBD** [bug] CI dos templates falha com pnpm — alinhar com correções aplicadas no `lzr-brand`
-- **#TBD** [bug] `eslint.config.mjs` importa `globals` mas não declara em devDependencies
-- **#TBD** [bug] `package.json` dos templates sem `"packageManager"` declarado
-
-> Os números `#TBD` serão substituídos pelos números das issues correspondentes assim que criadas.
+- **#19** [bug] CI dos templates falha com pnpm — alinhar com correções aplicadas no `lzr-brand`
+- **#20** [bug] `eslint.config.mjs` importa `globals` mas não declara em devDependencies
+- **#21** [bug] `package.json` dos templates sem `"packageManager"` declarado
 
 ## Como usar este documento
 
